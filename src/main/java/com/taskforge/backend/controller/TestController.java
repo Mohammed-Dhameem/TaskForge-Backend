@@ -5,6 +5,8 @@ import com.taskforge.backend.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/test")
 @RequiredArgsConstructor
@@ -17,4 +19,8 @@ public class TestController {
         return userService.save(user);
     }
 
+    @GetMapping("/userDetails")
+    public List<User> getUserDetails() {
+        return userService.getUserDetails();
+    }
 }
