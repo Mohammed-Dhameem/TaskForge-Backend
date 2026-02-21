@@ -1,4 +1,4 @@
-package com.TaskForge.TaskForge_Backend;
+package com.taskforge.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

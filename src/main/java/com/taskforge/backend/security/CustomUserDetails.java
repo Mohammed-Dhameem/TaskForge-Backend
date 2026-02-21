@@ -1,7 +1,7 @@
-package com.TaskForge.TaskForge_Backend.Security;
+package com.taskforge.backend.security;
 
-import com.TaskForge.TaskForge_Backend.Entity.Enum.AuthProviderEnum;
-import com.TaskForge.TaskForge_Backend.Entity.Users;
+import com.taskforge.backend.entity.Enum.AuthProviderEnum;
+import com.taskforge.backend.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
@@ -10,9 +10,9 @@ import java.util.List;
 
 public class CustomUserDetails implements UserDetails {
 
-    private final Users user;
+    private final User user;
 
-    public CustomUserDetails(Users user) {
+    public CustomUserDetails(User user) {
         this.user = user;
     }
 

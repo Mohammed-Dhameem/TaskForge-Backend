@@ -1,4 +1,4 @@
-package com.TaskForge.TaskForge_Backend.Entity.Enum;
+package com.taskforge.backend.entity.Enum;
 
 public enum AuthProviderEnum {
     LOCAL,

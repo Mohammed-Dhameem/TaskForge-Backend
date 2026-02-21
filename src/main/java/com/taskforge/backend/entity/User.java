@@ -1,6 +1,6 @@
-package com.TaskForge.TaskForge_Backend.Entity;
+package com.taskforge.backend.entity;
 
-import com.TaskForge.TaskForge_Backend.Entity.Enum.AuthProviderEnum;
+import com.taskforge.backend.entity.Enum.AuthProviderEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Users {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
